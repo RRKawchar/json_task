@@ -1,0 +1,473 @@
+{
+  "success": true,
+  "message": "OK",
+  "data": [
+    {
+      "_id": "6402475a4f06e991593112bd",
+      "plannerId": "7taXVVDRtQgKV41XCmZ5AKlJMe92",
+      "plannerName": "Zip Trip",
+      "title": "Phuket trip - 4 days",
+      "price": 9.99,
+      "description": "Phuket, a rainforested, mountainous island in the Andaman Sea, has some of Thailand’s most popular beaches, mainly situated along the clear waters of the western shore. The island is home to many high-end seaside resorts, spas and restaurants. Phuket City, the capital, has old shophouses and busy markets. Patong, the main resort town, has many nightclubs, bars and discos",
+      "duration": 4,
+      "countries": [
+        "Thailand"
+      ],
+      "cities": [
+        "Phuket"
+      ],
+      "travellersTypes": [
+        "solo",
+        "couple",
+        "friends",
+        "family"
+      ],
+      "foodPreferences": [
+        "non-vegetarian",
+        "vegan",
+        "halal",
+        "vegetarian",
+        "local-food"
+      ],
+      "photos": [
+        "https://thumbs.dreamstime.com/b/restaurant-16866439.jpg",
+        "https://img.theculturetrip.com/wp-content/uploads/2018/12/gallerybychele.jpg",
+        "planImages/1f4ff7bc-3e55-4fed-9e69-044d53d9789d_2.jpg",
+        "planImages/36e5e096-9aab-459e-a817-234f72ca9060_3.jpg"
+      ],
+      "includesActivities": false,
+      "tags": [
+        "phuke",
+        "sea",
+        "beach",
+        "thailand"
+      ],
+      "bestTimeToVisit": [
+        "winter",
+        "summer",
+        "spring",
+        "autumn"
+      ],
+      "tripTypes": [
+        "adventure",
+        "chill",
+        "eventful",
+        "explore"
+      ],
+      "status": "pending",
+      "createdAt": "2023-03-03T19:15:38.228Z",
+      "updatedAt": "2023-03-03T20:07:17.032Z",
+      "__v": 0,
+      "days": [
+        {
+          "number": 1,
+          "events": [
+            {
+              "_id": "640248a14f06e991593112c0",
+              "title": "Traditional breakfast 1",
+              "description": "Century-old building offering authentic Phuketian cooking & elevated wine & cocktails.",
+              "startTime": 480,
+              "endTime": 540,
+              "location": {
+                "description": "Tu Kab Khao Restaurant Phuket, Phangnga Road, Talat Yai, Mueang Phuket District, Phuket, Thailand",
+                "matched_substrings": [
+                  {
+                    "length": 6,
+                    "offset": 0
+                  }
+                ],
+                "place_id": "ChIJ1ylR-foxUDAR_r3OwL7Evr8",
+                "reference": "ChIJ1ylR-foxUDAR_r3OwL7Evr8",
+                "structured_formatting": {
+                  "main_text": "Tu Kab Khao Restaurant Phuket",
+                  "main_text_matched_substrings": [
+                    {
+                      "length": 6,
+                      "offset": 0
+                    }
+                  ],
+                  "secondary_text": "Phangnga Road, Talat Yai, Mueang Phuket District, Phuket, Thailand"
+                },
+                "terms": [
+                  {
+                    "offset": 0,
+                    "value": "Tu Kab Khao Restaurant Phuket"
+                  },
+                  {
+                    "offset": 31,
+                    "value": "Phangnga Road"
+                  },
+                  {
+                    "offset": 46,
+                    "value": "Talat Yai"
+                  },
+                  {
+                    "offset": 57,
+                    "value": "Mueang Phuket District"
+                  },
+                  {
+                    "offset": 81,
+                    "value": "Phuket"
+                  },
+                  {
+                    "offset": 89,
+                    "value": "Thailand"
+                  }
+                ],
+                "types": [
+                  "restaurant",
+                  "food",
+                  "point_of_interest",
+                  "establishment"
+                ]
+              },
+              "costFor1": 3,
+              "costFor2": 5,
+              "costFor4": 10,
+              "photos": [],
+              "videos": [],
+              "donts": "",
+              "mustDos": "Must try cocktail",
+              "webLinks": [
+                {
+                  "title": "FB link",
+                  "url": "https://www.facebook.com/tukabkhao/"
+                }
+              ],
+              "eventType": "breakfast",
+              "preferredTransport": "",
+              "alternativeTransport": "",
+              "needsPreBooking": true,
+              "preBookingInfo": "aaaa"
+            },
+            {
+              "_id": "6402519840cc462333916cc4",
+              "title": "Commute to Patong ",
+              "description": "Travel to Patong beach for relaxation",
+              "startTime": 540,
+              "endTime": 600,
+              "fromLocation": {
+                "description": "Tu Kab Khao Restaurant Phuket, Phangnga Road, Talat Yai, Mueang Phuket District, Phuket, Thailand",
+                "matched_substrings": [
+                  {
+                    "length": 6,
+                    "offset": 0
+                  }
+                ],
+                "place_id": "ChIJ1ylR-foxUDAR_r3OwL7Evr8",
+                "reference": "ChIJ1ylR-foxUDAR_r3OwL7Evr8",
+                "structured_formatting": {
+                  "main_text": "Tu Kab Khao Restaurant Phuket",
+                  "main_text_matched_substrings": [
+                    {
+                      "length": 6,
+                      "offset": 0
+                    }
+                  ],
+                  "secondary_text": "Phangnga Road, Talat Yai, Mueang Phuket District, Phuket, Thailand"
+                },
+                "terms": [
+                  {
+                    "offset": 0,
+                    "value": "Tu Kab Khao Restaurant Phuket"
+                  },
+                  {
+                    "offset": 31,
+                    "value": "Phangnga Road"
+                  },
+                  {
+                    "offset": 46,
+                    "value": "Talat Yai"
+                  },
+                  {
+                    "offset": 57,
+                    "value": "Mueang Phuket District"
+                  },
+                  {
+                    "offset": 81,
+                    "value": "Phuket"
+                  },
+                  {
+                    "offset": 89,
+                    "value": "Thailand"
+                  }
+                ],
+                "types": [
+                  "restaurant",
+                  "food",
+                  "point_of_interest",
+                  "establishment"
+                ]
+              },
+              "toLocation": {
+                "description": "Patong Beach, Pa Tong, Kathu District, Phuket, Thailand",
+                "matched_substrings": [
+                  {
+                    "length": 9,
+                    "offset": 0
+                  }
+                ],
+                "place_id": "ChIJZ7ELyL06UDARbRcj60k3Dfg",
+                "reference": "ChIJZ7ELyL06UDARbRcj60k3Dfg",
+                "structured_formatting": {
+                  "main_text": "Patong Beach",
+                  "main_text_matched_substrings": [
+                    {
+                      "length": 9,
+                      "offset": 0
+                    }
+                  ],
+                  "secondary_text": "Pa Tong, Kathu District, Phuket, Thailand"
+                },
+                "terms": [
+                  {
+                    "offset": 0,
+                    "value": "Patong Beach"
+                  },
+                  {
+                    "offset": 14,
+                    "value": "Pa Tong"
+                  },
+                  {
+                    "offset": 23,
+                    "value": "Kathu District"
+                  },
+                  {
+                    "offset": 39,
+                    "value": "Phuket"
+                  },
+                  {
+                    "offset": 47,
+                    "value": "Thailand"
+                  }
+                ],
+                "types": [
+                  "natural_feature",
+                  "establishment"
+                ]
+              },
+              "costFor1": 10,
+              "costFor2": 10,
+              "costFor4": 10,
+              "photos": [
+                "eventImages/1d745ef6-6c0a-4b17-8462-b8648325ec6e_0.jpg"
+              ],
+              "videos": [],
+              "donts": "",
+              "mustDos": "Drop by near ABC road to see a great view",
+              "webLinks": [],
+              "eventType": "commute",
+              "preferredTransport": "Taxi",
+              "alternativeTransport": "Walking",
+              "needsPreBooking": false,
+              "preBookingInfo": ""
+            }
+          ]
+        },
+        {
+          "number": 1,
+          "events": [
+            {
+              "title": "Travel to Patong",
+              "description": "Travel from restaurant to Patong beach",
+              "startTime": 540,
+              "endTime": 600,
+              "fromLocation": {
+                "description": "Tu Kab Khao Restaurant Phuket, Phangnga Road, Talat Yai, Mueang Phuket District, Phuket, Thailand",
+                "matched_substrings": [
+                  {
+                    "length": 6,
+                    "offset": 0
+                  }
+                ],
+                "place_id": "ChIJ1ylR-foxUDAR_r3OwL7Evr8",
+                "reference": "ChIJ1ylR-foxUDAR_r3OwL7Evr8",
+                "structured_formatting": {
+                  "main_text": "Tu Kab Khao Restaurant Phuket",
+                  "main_text_matched_substrings": [
+                    {
+                      "length": 6,
+                      "offset": 0
+                    }
+                  ],
+                  "secondary_text": "Phangnga Road, Talat Yai, Mueang Phuket District, Phuket, Thailand"
+                },
+                "terms": [
+                  {
+                    "offset": 0,
+                    "value": "Tu Kab Khao Restaurant Phuket"
+                  },
+                  {
+                    "offset": 31,
+                    "value": "Phangnga Road"
+                  },
+                  {
+                    "offset": 46,
+                    "value": "Talat Yai"
+                  },
+                  {
+                    "offset": 57,
+                    "value": "Mueang Phuket District"
+                  },
+                  {
+                    "offset": 81,
+                    "value": "Phuket"
+                  },
+                  {
+                    "offset": 89,
+                    "value": "Thailand"
+                  }
+                ],
+                "types": [
+                  "restaurant",
+                  "food",
+                  "point_of_interest",
+                  "establishment"
+                ]
+              },
+              "toLocation": {
+                "description": "Patong Beach, Pa Tong, Kathu District, Phuket, Thailand",
+                "matched_substrings": [
+                  {
+                    "length": 5,
+                    "offset": 0
+                  }
+                ],
+                "place_id": "ChIJZ7ELyL06UDARbRcj60k3Dfg",
+                "reference": "ChIJZ7ELyL06UDARbRcj60k3Dfg",
+                "structured_formatting": {
+                  "main_text": "Patong Beach",
+                  "main_text_matched_substrings": [
+                    {
+                      "length": 5,
+                      "offset": 0
+                    }
+                  ],
+                  "secondary_text": "Pa Tong, Kathu District, Phuket, Thailand"
+                },
+                "terms": [
+                  {
+                    "offset": 0,
+                    "value": "Patong Beach"
+                  },
+                  {
+                    "offset": 14,
+                    "value": "Pa Tong"
+                  },
+                  {
+                    "offset": 23,
+                    "value": "Kathu District"
+                  },
+                  {
+                    "offset": 39,
+                    "value": "Phuket"
+                  },
+                  {
+                    "offset": 47,
+                    "value": "Thailand"
+                  }
+                ],
+                "types": [
+                  "natural_feature",
+                  "establishment"
+                ]
+              },
+              "costFor1": 30,
+              "costFor2": 30,
+              "costFor4": 30,
+              "photos": [],
+              "videos": [],
+              "donts": "",
+              "mustDos": "",
+              "webLinks": [],
+              "eventType": "commute",
+              "preferredTransport": "Taxi",
+              "alternativeTransport": "",
+              "needsPreBooking": false,
+              "preBookingInfo": "",
+              "_id": "6402503872b968848b6416e6"
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "events": [
+            {
+              "_id": "6402536840cc462333916ccb",
+              "title": "Breakfast 7",
+              "description": "Breakfast",
+              "startTime": 475,
+              "endTime": 540,
+              "location": {
+                "description": "Mama Jin Restaurant, Patak Road, Karon, Mueang Phuket District, Phuket, Thailand",
+                "matched_substrings": [
+                  {
+                    "length": 8,
+                    "offset": 0
+                  }
+                ],
+                "place_id": "ChIJGQfPX2klUDARmvci7GDR4T4",
+                "reference": "ChIJGQfPX2klUDARmvci7GDR4T4",
+                "structured_formatting": {
+                  "main_text": "Mama Jin Restaurant",
+                  "main_text_matched_substrings": [
+                    {
+                      "length": 8,
+                      "offset": 0
+                    }
+                  ],
+                  "secondary_text": "Patak Road, Karon, Mueang Phuket District, Phuket, Thailand"
+                },
+                "terms": [
+                  {
+                    "offset": 0,
+                    "value": "Mama Jin Restaurant"
+                  },
+                  {
+                    "offset": 21,
+                    "value": "Patak Road"
+                  },
+                  {
+                    "offset": 33,
+                    "value": "Karon"
+                  },
+                  {
+                    "offset": 40,
+                    "value": "Mueang Phuket District"
+                  },
+                  {
+                    "offset": 64,
+                    "value": "Phuket"
+                  },
+                  {
+                    "offset": 72,
+                    "value": "Thailand"
+                  }
+                ],
+                "types": [
+                  "restaurant",
+                  "food",
+                  "point_of_interest",
+                  "establishment"
+                ]
+              },
+              "costFor1": 6,
+              "costFor2": 12,
+              "costFor4": 18,
+              "photos": [],
+              "videos": [],
+              "donts": "Lunch",
+              "mustDos": "Breakfast",
+              "webLinks": [],
+              "eventType": "breakfast",
+              "preferredTransport": "",
+              "alternativeTransport": "",
+              "needsPreBooking": false,
+              "preBookingInfo": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
