@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:json_task/view/screens/home_screen.dart';
+import 'package:json_task/view/screens/ongoing_plan_screen.dart';
+import 'package:json_task/widgets/reusable_text.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -12,8 +14,8 @@ class _MainScreenState extends State<MainScreen> {
   int pageIndex = 0;
   final pages = [
     HomeScreen(),
-    const Text("Second Screen"),
-    const Text("Favourite Screen")
+     OnGoingPlanScreen(),
+    const Center(child: Text("Favourite Screen"))
   ];
   @override
   Widget build(BuildContext context) {
@@ -27,7 +29,7 @@ class _MainScreenState extends State<MainScreen> {
 
   Widget customNavigationBar() {
     return Container(
-        height: 80,
+        height: 70,
         decoration:const BoxDecoration(
           color: Colors.grey,
           borderRadius:  BorderRadius.only(
@@ -51,15 +53,16 @@ class _MainScreenState extends State<MainScreen> {
                       ? const Icon(
                     Icons.home_outlined,
                     color: Colors.black,
-                    size: 35,
+                    size: 30,
                   )
                       : const Icon(
                     Icons.home_outlined,
                     color: Colors.white,
-                    size: 35,
+                    size: 30,
                   ),
                 ),
-                 Text("Home",style: TextStyle(color: pageIndex==0?Colors.black:Colors.white),)
+                 ReusableText(text: "Home",size: 12,color: pageIndex==0?Colors.black:Colors.white,),
+
               ],
             ),
 
@@ -76,15 +79,15 @@ class _MainScreenState extends State<MainScreen> {
                       ? const Icon(
                     Icons.add_road_outlined,
                     color: Colors.black,
-                    size: 35,
+                    size: 30,
                   )
                       : const Icon(
                     Icons.add_road_outlined,
                     color: Colors.white,
-                    size: 35,
+                    size: 30,
                   ),
                 ),
-                Text("Ongoing Plan",style: TextStyle(color: pageIndex==1?Colors.black:Colors.white),)
+                ReusableText(text: "Ongoing Plan",size: 12,color: pageIndex==1?Colors.black:Colors.white,),
               ],
             ),
             Column(
@@ -100,15 +103,15 @@ class _MainScreenState extends State<MainScreen> {
                       ? const Icon(
                     Icons.person,
                     color: Colors.black,
-                    size: 35,
+                    size: 30,
                   )
                       : const Icon(
                     Icons.person,
                     color: Colors.white,
-                    size: 35,
+                    size: 30,
                   ),
                 ),
-                Text("Profile",style: TextStyle(color: pageIndex==2?Colors.black:Colors.white),)
+                ReusableText(text: "Ongoing Plan",size: 12,color: pageIndex==2?Colors.black:Colors.white,),
               ],
             ),
           ],

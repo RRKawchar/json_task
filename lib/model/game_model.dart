@@ -17,9 +17,9 @@ class GameModel {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['success'] = this.success;
-    data['message'] = this.message;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['success'] = success;
+    data['message'] = message;
     if (this.data != null) {
       data['data'] = this.data!.map((v) => v.toJson()).toList();
     }
@@ -97,35 +97,35 @@ class Data {
     if (json['days'] != null) {
       days = <Days>[];
       json['days'].forEach((v) {
-        days!.add(new Days.fromJson(v));
+        days!.add(Days.fromJson(v));
       });
     }
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['_id'] = this.sId;
-    data['plannerId'] = this.plannerId;
-    data['plannerName'] = this.plannerName;
-    data['title'] = this.title;
-    data['price'] = this.price;
-    data['description'] = this.description;
-    data['duration'] = this.duration;
-    data['countries'] = this.countries;
-    data['cities'] = this.cities;
-    data['travellersTypes'] = this.travellersTypes;
-    data['foodPreferences'] = this.foodPreferences;
-    data['photos'] = this.photos;
-    data['includesActivities'] = this.includesActivities;
-    data['tags'] = this.tags;
-    data['bestTimeToVisit'] = this.bestTimeToVisit;
-    data['tripTypes'] = this.tripTypes;
-    data['status'] = this.status;
-    data['createdAt'] = this.createdAt;
-    data['updatedAt'] = this.updatedAt;
-    data['__v'] = this.iV;
-    if (this.days != null) {
-      data['days'] = this.days!.map((v) => v.toJson()).toList();
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['_id'] = sId;
+    data['plannerId'] = plannerId;
+    data['plannerName'] = plannerName;
+    data['title'] = title;
+    data['price'] = price;
+    data['description'] = description;
+    data['duration'] = duration;
+    data['countries'] = countries;
+    data['cities'] = cities;
+    data['travellersTypes'] = travellersTypes;
+    data['foodPreferences'] = foodPreferences;
+    data['photos'] = photos;
+    data['includesActivities'] = includesActivities;
+    data['tags'] = tags;
+    data['bestTimeToVisit'] = bestTimeToVisit;
+    data['tripTypes'] = tripTypes;
+    data['status'] = status;
+    data['createdAt'] = createdAt;
+    data['updatedAt'] = updatedAt;
+    data['__v'] = iV;
+    if (days != null) {
+      data['days'] = days!.map((v) => v.toJson()).toList();
     }
     return data;
   }
@@ -142,16 +142,16 @@ class Days {
     if (json['events'] != null) {
       events = <Events>[];
       json['events'].forEach((v) {
-        events!.add(new Events.fromJson(v));
+        events!.add(Events.fromJson(v));
       });
     }
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['number'] = this.number;
-    if (this.events != null) {
-      data['events'] = this.events!.map((v) => v.toJson()).toList();
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['number'] = number;
+    if (events != null) {
+      data['events'] = events!.map((v) => v.toJson()).toList();
     }
     return data;
   }
@@ -210,7 +210,7 @@ class Events {
     startTime = json['startTime'];
     endTime = json['endTime'];
     location = json['location'] != null
-        ? new Location.fromJson(json['location'])
+        ? Location.fromJson(json['location'])
         : null;
     costFor1 = json['costFor1'];
     costFor2 = json['costFor2'];
@@ -227,7 +227,7 @@ class Events {
     if (json['webLinks'] != null) {
       webLinks = <WebLinks>[];
       json['webLinks'].forEach((v) {
-        webLinks!.add(new WebLinks.fromJson(v));
+        webLinks!.add(WebLinks.fromJson(v));
       });
     }
     eventType = json['eventType'];
@@ -236,45 +236,45 @@ class Events {
     needsPreBooking = json['needsPreBooking'];
     preBookingInfo = json['preBookingInfo'];
     fromLocation = json['fromLocation'] != null
-        ? new Location.fromJson(json['fromLocation'])
+        ? Location.fromJson(json['fromLocation'])
         : null;
     toLocation = json['toLocation'] != null
-        ? new Location.fromJson(json['toLocation'])
+        ? Location.fromJson(json['toLocation'])
         : null;
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['_id'] = this.sId;
-    data['title'] = this.title;
-    data['description'] = this.description;
-    data['startTime'] = this.startTime;
-    data['endTime'] = this.endTime;
-    if (this.location != null) {
-      data['location'] = this.location!.toJson();
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['_id'] = sId;
+    data['title'] = title;
+    data['description'] = description;
+    data['startTime'] = startTime;
+    data['endTime'] = endTime;
+    if (location != null) {
+      data['location'] = location!.toJson();
     }
-    data['costFor1'] = this.costFor1;
-    data['costFor2'] = this.costFor2;
-    data['costFor4'] = this.costFor4;
-    data['photos'] = this.photos;
-    if (this.videos != null) {
-      data['videos'] = this.videos!.map((v) => v.toJson()).toList();
+    data['costFor1'] = costFor1;
+    data['costFor2'] = costFor2;
+    data['costFor4'] = costFor4;
+    data['photos'] = photos;
+    if (videos != null) {
+      data['videos'] = videos!.map((v) => v.toJson()).toList();
     }
-    data['donts'] = this.donts;
-    data['mustDos'] = this.mustDos;
-    if (this.webLinks != null) {
-      data['webLinks'] = this.webLinks!.map((v) => v.toJson()).toList();
+    data['donts'] = donts;
+    data['mustDos'] = mustDos;
+    if (webLinks != null) {
+      data['webLinks'] = webLinks!.map((v) => v.toJson()).toList();
     }
-    data['eventType'] = this.eventType;
-    data['preferredTransport'] = this.preferredTransport;
-    data['alternativeTransport'] = this.alternativeTransport;
-    data['needsPreBooking'] = this.needsPreBooking;
-    data['preBookingInfo'] = this.preBookingInfo;
-    if (this.fromLocation != null) {
-      data['fromLocation'] = this.fromLocation!.toJson();
+    data['eventType'] = eventType;
+    data['preferredTransport'] = preferredTransport;
+    data['alternativeTransport'] = alternativeTransport;
+    data['needsPreBooking'] = needsPreBooking;
+    data['preBookingInfo'] = preBookingInfo;
+    if (fromLocation != null) {
+      data['fromLocation'] = fromLocation!.toJson();
     }
-    if (this.toLocation != null) {
-      data['toLocation'] = this.toLocation!.toJson();
+    if (toLocation != null) {
+      data['toLocation'] = toLocation!.toJson();
     }
     return data;
   }
@@ -303,39 +303,39 @@ class Location {
     if (json['matched_substrings'] != null) {
       matchedSubstrings = <MatchedSubstrings>[];
       json['matched_substrings'].forEach((v) {
-        matchedSubstrings!.add(new MatchedSubstrings.fromJson(v));
+        matchedSubstrings!.add(MatchedSubstrings.fromJson(v));
       });
     }
     placeId = json['place_id'];
     reference = json['reference'];
     structuredFormatting = json['structured_formatting'] != null
-        ? new StructuredFormatting.fromJson(json['structured_formatting'])
+        ? StructuredFormatting.fromJson(json['structured_formatting'])
         : null;
     if (json['terms'] != null) {
       terms = <Terms>[];
       json['terms'].forEach((v) {
-        terms!.add(new Terms.fromJson(v));
+        terms!.add(Terms.fromJson(v));
       });
     }
     types = json['types'].cast<String>();
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['description'] = this.description;
-    if (this.matchedSubstrings != null) {
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['description'] = description;
+    if (matchedSubstrings != null) {
       data['matched_substrings'] =
-          this.matchedSubstrings!.map((v) => v.toJson()).toList();
+          matchedSubstrings!.map((v) => v.toJson()).toList();
     }
-    data['place_id'] = this.placeId;
-    data['reference'] = this.reference;
-    if (this.structuredFormatting != null) {
-      data['structured_formatting'] = this.structuredFormatting!.toJson();
+    data['place_id'] = placeId;
+    data['reference'] = reference;
+    if (structuredFormatting != null) {
+      data['structured_formatting'] = structuredFormatting!.toJson();
     }
-    if (this.terms != null) {
-      data['terms'] = this.terms!.map((v) => v.toJson()).toList();
+    if (terms != null) {
+      data['terms'] = terms!.map((v) => v.toJson()).toList();
     }
-    data['types'] = this.types;
+    data['types'] = types;
     return data;
   }
 }
@@ -352,9 +352,9 @@ class MatchedSubstrings {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['length'] = this.length;
-    data['offset'] = this.offset;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['length'] = length;
+    data['offset'] = offset;
     return data;
   }
 }
@@ -380,13 +380,13 @@ class StructuredFormatting {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['main_text'] = this.mainText;
-    if (this.mainTextMatchedSubstrings != null) {
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['main_text'] = mainText;
+    if (mainTextMatchedSubstrings != null) {
       data['main_text_matched_substrings'] =
-          this.mainTextMatchedSubstrings!.map((v) => v.toJson()).toList();
+          mainTextMatchedSubstrings!.map((v) => v.toJson()).toList();
     }
-    data['secondary_text'] = this.secondaryText;
+    data['secondary_text'] = secondaryText;
     return data;
   }
 }
@@ -423,9 +423,9 @@ class Terms {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['offset'] = this.offset;
-    data['value'] = this.value;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['offset'] = offset;
+    data['value'] = value;
     return data;
   }
 }
@@ -442,9 +442,9 @@ class WebLinks {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['title'] = this.title;
-    data['url'] = this.url;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['title'] = title;
+    data['url'] = url;
     return data;
   }
 }
